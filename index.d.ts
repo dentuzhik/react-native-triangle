@@ -4,6 +4,7 @@
 // TypeScript Version: 2.2.2
 
 import React, { Component } from 'react'
+import { ViewStyle } from 'react-native'
 
 type TrianglePropsDirection = 'up' | 'right' | 'down' | 'left' | 'up-left' | 'up-right' | 'down-left' | 'down-right'
 
@@ -28,6 +29,12 @@ interface TriangleProps {
    * Default value is 'white'
    */
   color?: string
+  
+  /**
+   * Style overrides of triangle container
+   * Accepts ViewStyle
+   */
+  style?: ViewStyle
 
   /**
    * Orientation for the triangle
